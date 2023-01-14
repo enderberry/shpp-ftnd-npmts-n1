@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+
+    color: inherit;
+}
+body {
+    font-family: -apple-system, "Trebuchet MS", Calibri, Arial, sans-serif;
+    font-size: 16px;
+
+    color: #111;
+}
+
+.root {}
+.root__timer {
+    margin: 0 auto;
+    height: 92vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+}
+
+.timer {}
+.timer__inner {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.18);
+    padding: 15px 20px;
+
+    border-radius: 10px;
+}
+.timer__title {
+    margin-bottom: 13px;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+.timer__main {
+    margin: 0 auto;
+    width: 228px;
+}
+.timer__main--hidden {
+    display: none;
+}
+.timer__status {
+}
+.timer__adjust {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.timer__btn {
+    border: none;
+
+    outline: none;
+    border-radius: 5px;
+    color: #fff;
+
+    background: #ccc;
+    cursor: pointer;
+}
+.timer__btn:hover {
+    filter: brightness(0.95);
+}
+.timer__btn--adj {
+    width: 25px;
+    height: 25px;
+    background: #1e91d6;
+}
+.timer__btn--start {
+    width: 70px;
+    height: 30px;
+
+    background: #05f140;
+}
+.timer__time {
+    margin: 0 20px;
+
+    font-size: 20px;
+    font-weight: 700;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Timer</title>
+    <script src="bundle.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="root">
+    <div class="root__timer timer">
+        <div class="timer__inner">
+            <h1 class="timer__title">Timer</h1>
+            <div class="timer__main" id="block-timer-setup">
+                <div class="timer__status">Set the time as minutes:</div>
+                <div class="timer__adjust">
+                    <button class="timer__btn timer__btn--adj" id="btn-adj-decr">-</button>
+                    <span class="timer__time" id="text-adj-time">0</span>
+                    <button class="timer__btn timer__btn--adj" id="btn-adj-incr">+</button>
+                </div>
+                <button class="timer__btn timer__btn--start" id="btn-start">Start</button>
+            </div>
+            <div class="timer__main timer__main--hidden" id="block-timer-running">
+                <div class="timer__status">Remaining:</div>
+                <div class="timer__adjust">
+                    <span class="timer__time" id="text-timer-time">0:00</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
