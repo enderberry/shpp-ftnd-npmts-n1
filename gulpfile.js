@@ -8,7 +8,7 @@ const sourcemaps = require('gulp-sourcemaps');
 const buffer = require('vinyl-buffer');
 const fancy_log = require('fancy-log');
 const paths = {
-    pages: ['src/*.html', 'src/*.css']
+    pages: ['src/*.html', 'src/*.css'],
 };
 
 const watchedBrowserify = watchify(
@@ -17,7 +17,7 @@ const watchedBrowserify = watchify(
         debug: true,
         entries: ['src/main.ts'],
         cache: {},
-        packageCache: {}
+        packageCache: {},
     }).plugin(tsify)
 );
 
@@ -29,7 +29,7 @@ function bundle() {
     return watchedBrowserify
         .transform('babelify', {
             presets: ['es2015'],
-            extensions: ['.ts']
+            extensions: ['.ts'],
         })
         .bundle()
         .on('error', fancy_log)

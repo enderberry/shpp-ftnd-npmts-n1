@@ -21,4 +21,4 @@ dom.btn.su_start.onclick = function () {
         }
         dom.fn.text.set_rn_time(time);
     }, 1000);
-}
+};
